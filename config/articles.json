@@ -1,6 +1,19 @@
 {
   "articles": [
     {
+      "id": 37,
+      "title": "Step into the Rhythm: - Salsa & Bachata - Complete beginners welcome!",
+      "author": "Alyssa, High Wycombe",
+      "date": "2025-02-25",
+      "category": "Salsa & Bachata",
+      "short": "Are you new to Latin dance? We’re here to guide you on an exciting journey! Our beginner-friendly weekly Salsa and Bachata classes build your confidence and help you feel the rhythm from your very first step.",
+      "text": "Are you ready to take your first step into the world of Latin dance? At Latin Shine Dance Academy, every dancer starts somewhere. Our beginner-friendly Salsa and Bachata classes are designed to introduce you to the fundamentals in a relaxed, supportive environment.\n\nWhat to Expect:\n- Detailed beginner lessons focused on essential steps and rhythms.\n- A welcoming community that celebrates every dance move.\n- Expert instructors dedicated to helping you find your rhythm and confidence.\n\nWhether you're looking to try something new, stay active, or simply enjoy the joy of dance, our classes are the perfect start to your journey. Embrace the music, meet new friends, and let’s create unforgettable moments on the dance floor together.",
+      "href": "2025-march-beginners-welcome",
+      "button": "Join Now",
+      "buttonUrl": "/reserve",
+      "img": "/news/bachata2.jpg"
+    },
+    {
       "id": 36,
       "title": "We are back! February 2025 classes",
       "author": "Alyssa, High Wycombe",
