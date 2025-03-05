@@ -125,7 +125,7 @@ const AboutOurClasses = () => {
             <br />
             Two classes (Bachata and Salsa - same week): £10
             <br />
-            Monthly Pass (All monthly Bachata and Salsa classes): £35
+            Monthly Pass (All monthly Bachata and Salsa classes): £40
           </p>
         </section>
       </main>
