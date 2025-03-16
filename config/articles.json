@@ -1,6 +1,17 @@
 {
   "articles": [
     {
+      "id": 38,
+      "title": "Reminder for our Salsa students - No salsa classes this Tuesday (18th of March)!",
+      "author": "Alyssa, High Wycombe",
+      "date": "2025-03-16",
+      "category": "Salsa & Bachata",
+      "short": "Just a quick reminder that due to unforeseen circumstances, we will not be able to hold our Salsa classes this Tuesday, 18th of March. We apologise for any inconvenience this may cause and look forward to seeing you next week!",
+      "text": "Just a quick reminder that due to unforeseen circumstances, we will not be able to hold our Salsa classes this Tuesday, 18th of March. We apologise for any inconvenience this may cause and look forward to seeing you next week!",
+      "href": "2025-no-salsa-tue-18th",
+      "img": "/news/reminder_no_classes.jpg"
+    },
+    {
       "id": 37,
       "title": "Step into the Rhythm: - Salsa & Bachata - Complete beginners welcome!",
       "author": "Alyssa, High Wycombe",
