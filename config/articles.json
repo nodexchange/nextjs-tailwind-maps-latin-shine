@@ -1,6 +1,19 @@
 {
   "articles": [
     {
+      "id":40,
+      "title": "Quick reminder: No classes on 27th and 28th of May",
+      "author": "Alyssa, High Wycombe",
+      "date": "2025-05-19",
+      "category": "Salsa & Bachata",
+      "short": "We will be on a short break from the 27th to the 28th of May. We will resume on the 3rd and 4th of June.",
+      "text": "We will be on a short break from the 27th to the 28th of May. We will resume on the 3rd and 4th of June.",
+      "href": "2024-may-no-classes-on-27th-and-28th",
+      "button": "",
+      "buttonUrl": "",
+      "img": "/news/summer.webp"
+    },
+    {
       "id":39,
       "title": "Get Ready to Sway This May: Join Our Salsa and Bachata Dance Courses!",
       "author": "Alyssa, High Wycombe",
