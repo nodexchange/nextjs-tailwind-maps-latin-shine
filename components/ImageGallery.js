@@ -88,7 +88,7 @@ const ImageGallery = () => {
         <div className="inline-block ml-1 ">
           <Link href="https://www.instagram.com/latinshinedance/">
             <svg
-              className="dark:fill-white relative top-[1px] left-0 fill-black transition-colors cursor-pointer"
+              className="dark:fill-white relative top-px left-0 fill-black transition-colors cursor-pointer"
               width="20"
               height="20"
               xmlns="http://www.w3.org/2000/svg">
@@ -112,7 +112,7 @@ const ImageGallery = () => {
                   objectFit: "cover"
                 }} />
             </div>
-            <div className='absolute bottom-0 p-3 bg-gradient-to-t from-shine to-transparent opacity-75 hover:opacity-100'>
+            <div className='absolute bottom-0 p-3 bg-linear-to-t from-shine to-transparent opacity-75 hover:opacity-100'>
               <p className='text-white text-bodyXS main-text'>{mainImgCaption}</p>
             </div>
           </div>

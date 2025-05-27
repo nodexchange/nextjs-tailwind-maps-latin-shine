@@ -10,7 +10,7 @@ const SocialIcons = () => {
   };
 
   return (
-    <div className="row flex flex-row gap-5 justify-center mt-[1px]">
+    <div className="row flex flex-row gap-5 justify-center mt-px">
       <Link
         href="https://www.facebook.com/LatinShineDance"
         id="facebook_icon"

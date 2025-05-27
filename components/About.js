@@ -29,7 +29,7 @@ export const About = () => {
             <source src="/about.mp4" />
           </video>
         </div>
-        <div className="w-[100%] px-4 pt-10 md:pt-2 lg:w-[70%]">
+        <div className="w-full px-4 pt-10 md:pt-2 lg:w-[70%]">
           <h2 className="font-black uppercase font-bigShoulder text-headingS lg:text-headingS md:mb-4">
             What is Bachata Sensual?
           </h2>

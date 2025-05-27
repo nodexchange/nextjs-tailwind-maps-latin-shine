@@ -52,7 +52,7 @@ const Header = () => {
   }
 
   return (
-    <nav className="bg-gradient-to-b from-navBlack to-navBlackEnd fixed w-full z-[100] flex p-[5px] text-white items-center">
+    <nav className="bg-linear-to-b from-navBlack to-navBlackEnd fixed w-full z-100 flex p-[5px] text-white items-center">
       {left}
       {right}
     </nav>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const UpcomingEvent = ({ type, text, amount, children }) => {
   return (
-    <div className="w-full md:max-w-[21rem] px-4 lg:px-0">
+    <div className="w-full md:max-w-84 px-4 lg:px-0">
       <div className="p-3 bg-white rounded shadow-md">
         <div className="">
           <div className="relative w-full mb-3 h-62 lg:mb-0">
