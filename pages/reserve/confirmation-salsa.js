@@ -80,9 +80,6 @@ const ReserveConfirmation = () => {
           {title}
         </h1>
         <div>
-          <br />
-          <p>Please note that we are currently on our winter break</p>
-          <p>---------</p>
           <p>
             You are all set for your Tuesday Salsa Class on:{" "}
             <b>

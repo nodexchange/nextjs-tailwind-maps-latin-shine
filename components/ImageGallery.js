@@ -1,23 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Image from "next/image";
 import Link from 'next/link';
 import { gaEvent } from '../lib/ga';
+import { ContentSection } from './layout';
+import galleryConfig from '../config/gallery.json';
 
-const ImageItem = ({ src, setMainImg, mainImg, caption, setMainImgCaption }) => {
-  const [srcUrl, setSrcUrl] = useState(src);
-
+const ImageItem = ({ src, setMainImg, mainImg, caption, setMainImgCaption, alt }) => {
   return (
     <Image
-      className="opacity-100 hover:opacity-70"
-      src={srcUrl}
-      alt={caption}
+      className="opacity-100 hover:opacity-70 cursor-pointer transition-opacity duration-200"
+      src={src}
+      alt={alt}
       height="250"
       width="250"
       onClick={() => {
-        gaEvent({ action: 'instagram_image_click', params: { caption: truncate(caption, 100) } });
-        setMainImgCaption(truncate(caption, 400));
-        setMainImg(srcUrl);
-        setSrcUrl(mainImg);
+        gaEvent({ action: 'gallery_image_click', params: { caption: truncate(caption, 100) } });
+        setMainImgCaption(caption);
+        setMainImg(src);
       }}
       style={{
         maxWidth: "100%",
@@ -27,62 +26,30 @@ const ImageItem = ({ src, setMainImg, mainImg, caption, setMainImgCaption }) => 
   );
 };
 
-const removeProxy = (url) => {
-  const coreUrl = url.split('.');
-  coreUrl[0] = 'https://scontent';
-  return coreUrl.join('.');
-}
-
 function truncate( str, n, useWordBoundary=true ){
   if (str.length <= n) { return str; }
-  const subString = str.substr(0, n-1); // the original check
+  const subString = str.substr(0, n-1);
   return (useWordBoundary 
     ? subString.substr(0, subString.lastIndexOf(" ")) 
     : subString) + " (...)";
 };
 
 const ImageGallery = () => {
-  const [mainImg, setMainImg] = useState('');
-  const [mainImgCaption, setMainImgCaption] = useState('');
-  const [images, setImages] = useState('');
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
+  const galleryImages = galleryConfig.images;
+  const [mainImg, setMainImg] = useState(galleryImages[0].src);
+  const [mainImgCaption, setMainImgCaption] = useState(galleryImages[0].caption);
 
-  useEffect(() => {
-    loadInstaImages();
-  }, []);
-
-  const loadInstaImages = async () => {
-    const res = await fetch('/api/insta');
-    const response = await res.json();
-    if (response.error) {
-      setError(true);
-      // set error message? 
-      return;
-    }
-    let imagesOnly = response.data.filter((item) => item.media_type === 'IMAGE' || item.media_type === 'CAROUSEL_ALBUM');
-    setMainImg(removeProxy(imagesOnly[0].media_url));
-    setMainImgCaption(truncate(imagesOnly[0].caption, 400));
-    imagesOnly = imagesOnly.slice(1, 5);
-    imagesOnly = imagesOnly.map((item) => { 
-      item.media_url = removeProxy(item.media_url);
-      return item;
-    });
-    setImages(imagesOnly);
-    setLoading(false);
-  }
-
-  if (loading || images.length === 0) return (<>Loading...</>);
-  if (error) return (<>Error...</>);
+  // Get the thumbnails (exclude the main image)
+  const thumbnailImages = galleryImages.slice(1);
 
   return (
-    <section className=" bg-white text-almostBlack px-8 py-10 md:py-10 lg:py-30 lg:px-30 xl:px-40 justify-between md:items-start">
+    <ContentSection background="white" fullWidth>
       <div>
         <div className="inline-block">
           <h3
             className="text-bodyM pb-1 font-black uppercase font-bigShoulder cursor-pointer"
             style={{ lineHeight: '1.5rem' }}>
-            <Link href="https://www.instagram.com/latinshinedance/">Latest from our Instagram</Link>
+            <Link href="https://www.instagram.com/latinshinedance/" target="_blank">Gallery - Follow us on Instagram</Link>
           </h3>
         </div>
         <div className="inline-block ml-1 ">
@@ -112,17 +79,18 @@ const ImageGallery = () => {
                   objectFit: "cover"
                 }} />
             </div>
-            <div className='absolute bottom-0 p-3 bg-linear-to-t from-shine to-transparent opacity-75 hover:opacity-100'>
-              <p className='text-white text-bodyXS main-text'>{mainImgCaption}</p>
+            <div className='absolute bottom-0 p-3 bg-gradient-to-t from-shine to-transparent opacity-75 hover:opacity-100 transition-opacity duration-200'>
+              <p className='text-white text-bodyXS main-text'>{truncate(mainImgCaption, 200)}</p>
             </div>
           </div>
-          {images.map((image, index) => {
+          {thumbnailImages.map((image, index) => {
             return (
               <div key={'imageContainer' + index} className={`thumb${index} thumb`}>
                 <ImageItem
                   key={'image' + index}
-                  src={image.media_url}
+                  src={image.src}
                   caption={image.caption}
+                  alt={image.alt}
                   setMainImgCaption={setMainImgCaption}
                   setMainImg={setMainImg}
                   mainImg={mainImg}
@@ -132,7 +100,7 @@ const ImageGallery = () => {
           })}
         </div>
       </div>
-    </section>
+    </ContentSection>
   );
 };
 

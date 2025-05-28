@@ -14,15 +14,15 @@ export const Instructors = () => {
           <h2 className="font-black uppercase font-bigShoulder text-headingS lg:text-headingS md:mb-4">
             Meet your teachers
           </h2>
-          <p className="my-4 l:my-12 md:m-0 font-light font-outfit text-bodyXS md:text-bodyS md:w-100">
+          <p className="my-4 l:my-12 md:m-0 font-light font-outfit text-bodyXS md:text-bodyS">
             {instructors.first}
           </p>
           <br />
-          <p className="my-4 l:my-12 md:m-0 font-light font-outfit text-bodyXS md:text-bodyS md:w-100">
+          <p className="my-4 l:my-12 md:m-0 font-light font-outfit text-bodyXS md:text-bodyS">
             {instructors.second}
           </p>
           <br />
-          <p className="my-4 l:my-12 md:m-0 font-light font-outfit text-bodyXS md:text-bodyS md:w-100">
+          <p className="my-4 l:my-12 md:m-0 font-light font-outfit text-bodyXS md:text-bodyS">
             {instructors.third}
           </p>
         </div>

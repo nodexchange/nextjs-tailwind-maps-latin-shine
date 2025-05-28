@@ -18,13 +18,12 @@ export default function Home() {
       {/* <HeroVideo /> */}
       <HeroSection />
       <UpcomingEventBanner />
-      {/* <AnnouncementBanner /> */}
       <div className='relative h-[82vh] scroll-smooth hover:scroll-auto flex flex-col'>
         <div className="flex-1 overflow-auto">
           <News limit={4} />
         </div>
       </div>
-      {/* <ImageGallery /> */}
+      <ImageGallery />
       <AboutSalsa />
       <About />
       {/* <Signup /> */}

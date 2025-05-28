@@ -1,14 +1,15 @@
 import { Secondary as Layout } from '../layouts';
 import { WhyDance } from "../components/WhyDance";
+import { ContentMain } from '../components/layout';
 
 const WhyDancePage = () => {
   return (
     <Layout
       title="Latin Shine | Dance Company - Why Dance?"
-      description="Learn about mental and physical benefits of latin dancing">
-      <main className=" bg-almostBlack text-white py-10 md:py-10 lg:py-30 justify-between md:items-start">
+      description="Discover the amazing benefits of Latin dancing. From fitness and confidence to community and joy - learn why thousands of people fall in love with Salsa and Bachata.">
+      <ContentMain>
         <WhyDance />
-      </main>
+      </ContentMain>
     </Layout>
   );
 };
