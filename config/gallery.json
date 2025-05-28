@@ -1,0 +1,34 @@
+{
+  "images": [
+    {
+      "id": 1,
+      "src": "/gallery/dance1.jpg",
+      "caption": "Bachata classes in High Wycombe - Learn sensual bachata with our experienced instructors",
+      "alt": "Students learning bachata in High Wycombe dance studio"
+    },
+    {
+      "id": 2,
+      "src": "/gallery/dance2.jpg", 
+      "caption": "Salsa social dancing - Join our weekly social events and practice your moves",
+      "alt": "Salsa social dancing event at Latin Shine"
+    },
+    {
+      "id": 3,
+      "src": "/gallery/dance3.jpg",
+      "caption": "Latin Shine dance community - Meet new friends and dance partners", 
+      "alt": "Latin Shine dance community members"
+    },
+    {
+      "id": 4,
+      "src": "/gallery/dance4.jpg",
+      "caption": "Professional dance instruction - Learn from certified Latin dance professionals",
+      "alt": "Professional Latin dance instructors teaching"
+    },
+    {
+      "id": 5,
+      "src": "/gallery/dance5.jpg",
+      "caption": "Student testimonial - We love to see our students progress and have fun!",
+      "alt": "Latin Shine Dance Academy - student testimonial"
+    }
+  ]
+} 

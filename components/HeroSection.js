@@ -11,7 +11,7 @@ import text from '../config/text.json';
 export default function HeroSection() {
   const { hero } = text;
   return (
-    <div className="sm:relative lg:flex bg-custom-stone overflow-hidden">
+    <div className="h-auto w-full sm:relative lg:flex bg-custom-stone">
       <HeroAnnouncement hero={hero} />
       <HeroTestimonials hero={hero} />
       <HeroLogo hero={hero} />

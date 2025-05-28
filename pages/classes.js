@@ -1,4 +1,5 @@
 import { Secondary as Layout } from "../layouts";
+import { ContentMain, ContentSection } from "../components/layout";
 import ButtonA from "../components/ButtonA";
 
 const AboutOurClasses = () => {
@@ -7,10 +8,11 @@ const AboutOurClasses = () => {
       title="Latin Shine | Dance Company - Our Salsa and Bachata Classes"
       description="Learn more about our Latin Dance LA Style (on-1 / crossbody) Salsa & Bachata Sensual Classes, weekly schedule, prices and locations"
     >
-      <main className=" bg-almostBlack text-white py-10 md:py-10 lg:py-30 justify-between md:items-start">
-        <section
+      <ContentMain>
+        <ContentSection
           id="salsa"
-          className="text-left bg-almostBlack text-white px-8 py-10 md:py-10 lg:py-30 lg:px-30 xl:px-40 justify-between md:items-start"
+          background="dark"
+          align="left"
         >
           <h2 className="font-black uppercase font-bigShoulder text-headingS lg:text-headingS md:mb-4">
             Salsa Tuesdays - Castle Street Dance Studios (High Wycombe)
@@ -52,10 +54,12 @@ const AboutOurClasses = () => {
               </div>
             </div>
           </div>
-        </section>
-        <section
+        </ContentSection>
+        
+        <ContentSection
           id="bachata"
-          className="text-left bg-courseImage text-white px-8 py-10 md:py-10 lg:py-30 lg:px-30 xl:px-40 justify-between md:items-start"
+          background="course"
+          align="left"
         >
           <h2 className="font-black uppercase font-bigShoulder text-headingS lg:text-headingS md:mb-4">
             Bachata Wednesdays - Guildhall (High Wycombe)
@@ -102,10 +106,12 @@ const AboutOurClasses = () => {
                 </div>
             </div>
           </div>
-        </section>
-        <section
+        </ContentSection>
+        
+        <ContentSection
           id="pricing"
-          className="text-left bg-almostBlack text-white px-8 py-10 md:py-10 lg:py-30 lg:px-30 xl:px-40 justify-between md:items-start"
+          background="dark"
+          align="left"
         >
           <h2 className="font-black uppercase font-bigShoulder text-headingS lg:text-headingS md:mb-4">
             Prices
@@ -127,8 +133,8 @@ const AboutOurClasses = () => {
             <br />
             Monthly Pass (All monthly Bachata and Salsa classes): £40
           </p>
-        </section>
-      </main>
+        </ContentSection>
+      </ContentMain>
     </Layout>
   );
 };

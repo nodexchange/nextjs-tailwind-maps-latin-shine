@@ -1,4 +1,5 @@
 import { Article } from './Article';
+import { ContentSection } from './layout';
 import events from '../config/events.json';
 
 export const Events = ({ limit = 30 }) => {
@@ -11,7 +12,7 @@ export const Events = ({ limit = 30 }) => {
   });
 
   return (
-    <section className="bg-no-repeat bg-cover bg-courseImage text-white px-8 py-10 md:py-10 lg:py-30 lg:px-30 xl:px-40 justify-between md:items-start">
+    <ContentSection background="course">
       {currentEvents.length === 0 ? null : (
         <>
           <h2
@@ -42,6 +43,6 @@ export const Events = ({ limit = 30 }) => {
           </div>
         </>
       )}
-    </section>
+    </ContentSection>
   );
 };

@@ -35,8 +35,7 @@ export const Secondary = ({
         transition={{ type: 'linear' }}
         className="
                     flex flex-col items-start w-full
-                    sm:px-16 md:px-36 lg:px-52 xl:px-80 2xl:px-96
-                    pt-24 h-full
+                    h-full
                 ">
         {children}
         <ButtonB path="/" title="Back to Home" />

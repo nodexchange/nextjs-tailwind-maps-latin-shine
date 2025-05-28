@@ -1,14 +1,15 @@
 import { Secondary as Layout } from '../layouts';
 import { Instructors } from "../components/Instructors";
+import { ContentMain } from '../components/layout';
 
 const InstructorsPage = () => {
   return (
     <Layout
-      title="Latin Shine | Dance Company - Instructors"
-      description="Learn about our Latin Dance instructors">
-      <main className=" bg-almostBlack text-white py-10 md:py-10 lg:py-30 justify-between md:items-start">
+      title="Latin Shine | Dance Company - Meet Our Instructors"
+      description="Meet Alyssa and Martin, our professional Latin dance instructors. Learn about their backgrounds, training, and passion for teaching Salsa and Bachata in High Wycombe.">
+      <ContentMain>
         <Instructors />
-      </main>
+      </ContentMain>
     </Layout>
   );
 };

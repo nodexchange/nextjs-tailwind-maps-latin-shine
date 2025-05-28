@@ -1,6 +1,279 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --font-big-shoulder: "Big Shoulders Display";
+  --font-outfit: "Outfit", "sans-serif";
+  
+  --animate-reserve-bounce: reserveBounce 3s infinite;
+  --animate-reserve-color: reserveColor 3s infinite;
+  
+  --color-custom-stone: #151515;
+  --color-shine: #bb0546;
+  --color-shine-alpha: rgba(187, 5, 69, 0.5);
+  --color-shine-low-alpha: rgba(187, 5, 69, 0.9);
+  --color-shine-dark: #610324;
+  --color-gold: #D5966C;
+  --color-almost-black: #151515;
+  --color-nav-black: rgba(0, 0, 0, 0.4);
+  --color-nav-black-end: rgba(0, 0, 0, 0.2);
+  --color-dark-gray: #444444;
+  
+  --drop-shadow-xl: 0 2px 2px rgba(0, 0, 0, 0.4);
+  --drop-shadow-3xl: 0 5px 2px rgba(0, 0, 0, 0.9);
+  
+  --width-btn: 260px;
+  --width-350: 350px;
+  --max-width-540: 540px;
+  --height-btn: 72px;
+  --height-mobile: 336px;
+  --height-tablet: 218px;
+  --height-550: 550px;
+  --height-600: 600px;
+  
+  --font-size-heading-xl: 96px;
+  --line-height-heading-xl: 88px;
+  --font-size-heading-l: 70px;
+  --line-height-heading-l: 70px;
+  --font-size-heading-xm: 60px;
+  --line-height-heading-xm: 60px;
+  --font-size-heading-mm: 55px;
+  --line-height-heading-mm: 50px;
+  --font-size-heading-m: 50px;
+  --line-height-heading-m: 45px;
+  --font-size-heading-s: 36px;
+  --line-height-heading-s: 36px;
+  --font-size-heading-xs: 32px;
+  --line-height-heading-xs: 32px;
+  --font-size-body-m: 22px;
+  --line-height-body-m: 32px;
+  --font-size-body-s: 18px;
+  --line-height-body-s: 28px;
+  --font-size-button: 20px;
+  --letter-spacing-button: 3.64px;
+  --font-size-body-xs: 16px;
+  --line-height-body-xs: 26px;
+  
+  --background-image-mobile-map: url('/mobile/image-map.jpg');
+  --background-image-tablet-map: url('/tablet/image-map.jpg');
+  --background-image-desktop-map: url('/desktop/image-map.jpg');
+  --background-image-desktop-hero: url('/desktop/image-hero.webp');
+  --background-image-about-image: linear-gradient(rgba(187, 5, 69, 0.9), rgba(187, 5, 69, 0.95)), url('/desktop/image-hero.webp');
+  --background-image-course-image: linear-gradient(rgba(187, 5, 69, 0.95), rgba(187, 5, 69, 0.95)), url('/bachata-dancing.webp');
+  --background-image-instructors-image: linear-gradient(rgba(187, 5, 69, 0.95), rgba(187, 5, 69, 0.99)), url('/logo.webp');
+  
+  --content-mobile-link: url("/mobile/image-hero@2x.jpg");
+}
+
+/* Custom utility classes for font families */
+@utility font-bigShoulder {
+  font-family: var(--font-big-shoulder);
+}
+
+@utility font-outfit {
+  font-family: var(--font-outfit);
+}
+
+/* Custom utility classes for font sizes */
+@utility text-headingXL {
+  font-size: var(--font-size-heading-xl);
+  line-height: var(--line-height-heading-xl);
+}
+
+@utility text-headingL {
+  font-size: var(--font-size-heading-l);
+  line-height: var(--line-height-heading-l);
+}
+
+@utility text-headingXM {
+  font-size: var(--font-size-heading-xm);
+  line-height: var(--line-height-heading-xm);
+}
+
+@utility text-headingMM {
+  font-size: var(--font-size-heading-mm);
+  line-height: var(--line-height-heading-mm);
+}
+
+@utility text-headingM {
+  font-size: var(--font-size-heading-m);
+  line-height: var(--line-height-heading-m);
+}
+
+@utility text-headingS {
+  font-size: var(--font-size-heading-s);
+  line-height: var(--line-height-heading-s);
+}
+
+@utility text-headingXS {
+  font-size: var(--font-size-heading-xs);
+  line-height: var(--line-height-heading-xs);
+}
+
+@utility text-bodyM {
+  font-size: var(--font-size-body-m);
+  line-height: var(--line-height-body-m);
+}
+
+@utility text-bodyS {
+  font-size: var(--font-size-body-s);
+  line-height: var(--line-height-body-s);
+}
+
+@utility text-bodyXS {
+  font-size: var(--font-size-body-xs);
+  line-height: var(--line-height-body-xs);
+}
+
+@utility text-button {
+  font-size: var(--font-size-button);
+  letter-spacing: var(--letter-spacing-button);
+}
+
+/* Custom utility classes for colors */
+@utility bg-custom-stone {
+  background-color: var(--color-custom-stone);
+}
+
+@utility bg-almostBlack {
+  background-color: var(--color-almost-black);
+}
+
+@utility text-shine {
+  color: var(--color-shine);
+}
+
+@utility bg-shine {
+  background-color: var(--color-shine);
+}
+
+@utility bg-shineDark {
+  background-color: var(--color-shine-dark);
+}
+
+@utility text-darkGray {
+  color: var(--color-dark-gray);
+}
+
+@utility text-almostBlack {
+  color: var(--color-almost-black);
+}
+
+@utility text-gold {
+  color: var(--color-gold);
+}
+
+/* Custom utility classes for background colors with alpha */
+@utility bg-shine-alpha {
+  background-color: var(--color-shine-alpha);
+}
+
+@utility bg-shine-low-alpha {
+  background-color: var(--color-shine-low-alpha);
+}
+
+/* Custom utility classes for dimensions */
+@utility w-btn {
+  width: var(--width-btn);
+}
+
+@utility w-350 {
+  width: var(--width-350);
+}
+
+@utility max-w-540 {
+  max-width: var(--max-width-540);
+}
+
+@utility h-btn {
+  height: var(--height-btn);
+}
+
+@utility h-mobile {
+  height: var(--height-mobile);
+}
+
+@utility h-tablet {
+  height: var(--height-tablet);
+}
+
+@utility h-550 {
+  height: var(--height-550);
+}
+
+@utility h-600 {
+  height: var(--height-600);
+}
+
+/* Custom utility classes for background images */
+@utility bg-mobileMap {
+  background-image: var(--background-image-mobile-map);
+}
+
+@utility bg-tabletMap {
+  background-image: var(--background-image-tablet-map);
+}
+
+@utility bg-desktopMap {
+  background-image: var(--background-image-desktop-map);
+}
+
+@utility bg-desktopHero {
+  background-image: var(--background-image-desktop-hero);
+}
+
+@utility bg-aboutImage {
+  background-image: var(--background-image-about-image);
+}
+
+@utility bg-courseImage {
+  background-image: var(--background-image-course-image);
+}
+
+@utility bg-instructorsImage {
+  background-image: var(--background-image-instructors-image);
+}
+
+/* Custom utility classes for animations */
+@utility animate-reserve-bounce {
+  animation: var(--animate-reserve-bounce);
+}
+
+@utility animate-reserve-color {
+  animation: var(--animate-reserve-color);
+}
+
+@keyframes reserveColor {
+  0%, 100% {
+    color: #ffb2b2;
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  10%, 90% {
+    color: #ffb2b2;
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    color: #fff;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@keyframes reserveBounce {
+  0%, 100% {
+    transform: translateX(-10%);
+    color: #bb0546;
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  10%, 90% {
+    transform: translateX(-10%);
+    color: #bb0546;
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateX(0);
+    color: #fff;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
 
 body {
   background-color: #151515;
@@ -178,5 +451,16 @@ table th {
     border-bottom: 0;
   }
 }
+
+/* Custom utility classes for border colors */
+@utility border-shine {
+  border-color: var(--color-shine);
+}
+
+@utility border-shineDark {
+  border-color: var(--color-shine-dark);
+}
+
+
 
 

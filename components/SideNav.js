@@ -97,14 +97,14 @@ const SideNav = () => {
     <>
       {showSidebar ? (
         <button
-          className="flex text-4xl text-white items-center cursor-pointer fixed right-[30px] top-[-5px] z-[110] md:right-[45px] md:top-[-5px]"
+          className="flex text-4xl text-white items-center cursor-pointer fixed right-[30px] top-[-5px] z-110 md:right-[45px] md:top-[-5px]"
           onClick={() => setShowSidebar(!showSidebar)}
         >
           x
         </button>
       ) : (
         <button
-          className="fixed z-[110] flex items-center cursor-pointer right-0 top-[6px] md:right-[15px] md:top-[5px]"
+          className="fixed z-110 flex items-center cursor-pointer right-0 top-[6px] md:right-[15px] md:top-[5px]"
           onClick={() => setShowSidebar(!showSidebar)}
         >
           <svg
