@@ -56,7 +56,7 @@ const Profile = ({ user, links, session }) => {
               <input
                 ref={inputEmailEl}
                 readOnly
-                className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none"
+                className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-hidden"
                 type="email"
                 placeholder="your email: eg. youremail@gmail.com"
                 aria-label="Email Address Input Field"
@@ -66,7 +66,7 @@ const Profile = ({ user, links, session }) => {
               <input
                 ref={inputFirstNameEl}
                 readOnly
-                className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none"
+                className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-hidden"
                 id="fname"
                 name="fname"
                 type="text"
@@ -78,7 +78,7 @@ const Profile = ({ user, links, session }) => {
               <input
                 ref={inputLastNameEl}
                 readOnly
-                className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none"
+                className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-hidden"
                 id="lname"
                 name="lname"
                 type="text"
@@ -90,7 +90,7 @@ const Profile = ({ user, links, session }) => {
               <input
                 ref={inputTelephoneEl}
                 readOnly
-                className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none"
+                className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-hidden"
                 type="tel"
                 placeholder="Telephone eg. 07500905702"
                 aria-label="Telephone Input Field"
@@ -100,7 +100,7 @@ const Profile = ({ user, links, session }) => {
               <input
                 ref={inputENameEl}
                 readOnly
-                className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none"
+                className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-hidden"
                 type="text"
                 placeholder="Emergency Contact Name"
                 aria-label="Your emergency contact name input field"
@@ -110,7 +110,7 @@ const Profile = ({ user, links, session }) => {
               <input
                 ref={inputETelEl}
                 readOnly
-                className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none"
+                className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-hidden"
                 type="tel"
                 placeholder="Emergency Telephone Number"
                 aria-label="Emergency Contact Telephone Name"

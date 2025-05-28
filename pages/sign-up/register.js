@@ -91,7 +91,7 @@ const Register = (props) => {
 
   return (
     <Layout title="Latin Shine | Dance Company - Register" description="You can register on our website to manage payments and reserve spots for our Salsa (LA Style) & Bachata Sensual latin dance classes.">
-      <main className="text-center bg-almostBlack text-white px-8 py-10 md:py-10 lg:py-30 lg:px-30 xl:px-40 justify-between md:items-start">
+      <main className="text-center bg-almostBlack w-full text-white px-8 py-10 md:py-10 lg:py-30 lg:px-30 xl:px-40 justify-between md:items-start">
         {message ? (
           <>
           <h3
@@ -111,28 +111,28 @@ const Register = (props) => {
             </h3>
             <form className="w-full max-w-sm mx-auto">
               <div className="flex items-center border-b border-shine py-2">
-                <input onChange={(e) => validateEmail(e)} autoComplete="off" ref={inputEmailEl} className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none" type="email" placeholder="your email: eg. youremail@gmail.com" aria-label="Email Address Input Field" />
+                <input onChange={(e) => validateEmail(e)} autoComplete="off" ref={inputEmailEl} className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-hidden" type="email" placeholder="your email: eg. youremail@gmail.com" aria-label="Email Address Input Field" />
               </div>
               <div className="flex items-center border-b border-shine py-2">
-                <input ref={inputPwdEl} type="password" autoComplete="off" className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none" minLength="6" placeholder="your password (min 6 characters)" aria-label="Password Input Field" />
+                <input ref={inputPwdEl} type="password" autoComplete="off" className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-hidden" minLength="6" placeholder="your password (min 6 characters)" aria-label="Password Input Field" />
               </div>
               <div className="flex items-center border-b border-shine py-2">
-                <input ref={inputFirstNameEl} className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none" id="fname" name="fname" type="text" placeholder="Your First name" aria-label="First Name Input Field" />
+                <input ref={inputFirstNameEl} className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-hidden" id="fname" name="fname" type="text" placeholder="Your First name" aria-label="First Name Input Field" />
               </div>
               <div className="flex items-center border-b border-shine py-2">
-                <input ref={inputLastNameEl} className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none" id="lname" name="lname" type="text" placeholder="Your Second name" aria-label="Second Name Input Field" />
+                <input ref={inputLastNameEl} className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-hidden" id="lname" name="lname" type="text" placeholder="Your Second name" aria-label="Second Name Input Field" />
               </div>
               <div className="flex items-center border-b border-shine py-2">
-                <input ref={inputTelephoneEl} className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none" type="tel" placeholder="Telephone eg. 07500905702" aria-label="Telephone Input Field" />
+                <input ref={inputTelephoneEl} className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-hidden" type="tel" placeholder="Telephone eg. 07500905702" aria-label="Telephone Input Field" />
               </div>
               <div className="flex items-center border-b border-shine py-2">
-                <input ref={inputENameEl} className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Emergency Contact Name" aria-label="Your emergency contact name input field" />
+                <input ref={inputENameEl} className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-hidden" type="text" placeholder="Emergency Contact Name" aria-label="Your emergency contact name input field" />
               </div>
               <div className="flex items-center border-b border-shine py-2">
-                <input ref={inputETelEl} className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none" type="tel" placeholder="Emergency Telephone Number" aria-label="Emergency Contact Telephone Name" />
+                <input ref={inputETelEl} className="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-hidden" type="tel" placeholder="Emergency Telephone Number" aria-label="Emergency Contact Telephone Name" />
               </div>
               <div className="form-check inline-block pt-4">
-                <input className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-shine checked:border-white focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" id="flexCheckChecked" onChange={checkboxHandler} />
+                <input className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-xs bg-white checked:bg-shine checked:border-white focus:outline-hidden transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" id="flexCheckChecked" onChange={checkboxHandler} />
                 <label className="form-check-label block w-full pl-7 text-left text-white" htmlFor="flexCheckChecked">
                   You agree to the <Link href="/terms" className="underline text-white hover:text-shine" target="_self">Terms and Conditions</Link> set out by this site, including our Cookie Use.
                 </label>

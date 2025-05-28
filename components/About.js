@@ -22,7 +22,7 @@ export const About = () => {
     }
   }, []);
   return (
-    <section className="bg-no-repeat bg-cover bg-aboutImage text-white px-8 py-10 md:py-10 lg:py-30 lg:px-30 xl:px-40 justify-between md:items-start">
+    <section className="bg-no-repeat bg-cover bg-aboutImage text-white w-full px-8 py-10 md:py-10 lg:py-30 lg:px-30 xl:px-40 justify-between md:items-start">
       <div className="block lg:flex">
         <div className="block w-full h-[424px] relative pb-10 sm:w-[235px] sm:mx-auto">
           <video id="player" controls className="w-auto h-[424px] top-0 left-0 relative sm:absolute sm:w-[235px] md:w-full lg:w-auto">

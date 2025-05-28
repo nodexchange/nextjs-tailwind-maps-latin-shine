@@ -35,6 +35,7 @@ class MyDocument extends Document {
           <meta name="msapplication-config" content="/browserconfig.xml" />
           <meta name="theme-color" content="#ffffff" />
           <meta name="apple-mobile-web-app-title" content="Latin Shine" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <meta name="keywords" content="Bachata,Salsa,Dance Classes in Wycombe,Latin Wycombe,Evening Classes,Kizomba,Zouk,Latin Dance,Adult Dance,Adult Dance Class,Latin Shine,Dancing,Sensual,Beginners,Student,High Wycombe,Buckinghamshire,New Course,Oxford,Aylesbury,Friendly,Fun,Tuesday,Wednesday,Evening" />
         </Head>
         <body>

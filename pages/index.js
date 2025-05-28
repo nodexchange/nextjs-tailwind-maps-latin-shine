@@ -5,6 +5,7 @@ import HeroSection from "../components/HeroSection";
 import MainSection from "../components/MainSection";
 import { Instructors } from "../components/Instructors";
 import { News } from "../components/News";
+import { UpcomingEventBanner } from "../components/UpcomingEventBanner";
 import Header from "../components/Header";
 import { Main as Layout } from "../layouts";
 import ImageGallery from "../components/ImageGallery";
@@ -16,13 +17,16 @@ export default function Home() {
       <Header />
       {/* <HeroVideo /> */}
       <HeroSection />
+      <UpcomingEventBanner />
       {/* <AnnouncementBanner /> */}
-      <div className='overflow-auto h-[82vh] scroll-smooth hover:scroll-auto'>
-        <News limit={4} />
+      <div className='relative h-[82vh] scroll-smooth hover:scroll-auto flex flex-col'>
+        <div className="flex-1 overflow-auto">
+          <News limit={4} />
+        </div>
       </div>
-      <ImageGallery />
-      <About />
+      {/* <ImageGallery /> */}
       <AboutSalsa />
+      <About />
       {/* <Signup /> */}
       <MainSection />
       <Instructors />

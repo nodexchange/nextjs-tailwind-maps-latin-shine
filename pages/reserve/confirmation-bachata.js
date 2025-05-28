@@ -72,7 +72,7 @@ const ReserveConfirmation = () => {
     <Layout
       title="Latin Shine | Dance Company - Reserve Confirmation Screen"
       description="Latin Shine Reserve Confirmation Screen for dance classes">
-      <main className="text-center bg-almostBlack text-white px-8 py-10 md:py-10 lg:py-30 lg:px-30 xl:px-40 justify-between md:items-start">
+      <main className="text-center bg-almostBlack text-white px-8 py-10 w-full md:py-10 lg:py-30 lg:px-30 xl:px-40 justify-between md:items-start">
         <h1
           className="text-bodyM font-black uppercase font-bigShoulder"
           style={{ lineHeight: '1.5rem' }}>
