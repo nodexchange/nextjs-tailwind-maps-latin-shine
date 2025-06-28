@@ -58,7 +58,7 @@ export const Article = ({ img, title, date, author, text, category, href, short,
           <>
           <p className="text-white whitespace-pre-line align-bottom">{short}</p>
           <Link href={eventHref}>
-            <button className="bg-yellow-300 text-black font-bold uppercase text-sm px-6 py-3 rounded-full mt-6">Read more</button>
+            <button className="bg-yellow-300 text-black font-bold uppercase text-sm px-6 py-3 rounded-full mt-6 cursor-pointer">Read more</button>
           </Link>
           </>
         ) : (
@@ -66,7 +66,7 @@ export const Article = ({ img, title, date, author, text, category, href, short,
           <p className="text-white whitespace-pre-line align-bottom">{text}</p>
           {button && (
             <Link href={buttonUrl}>
-              <button className="bg-yellow-300 text-black font-bold uppercase text-sm px-6 py-3 rounded-full mt-6">{button}</button>
+              <button className="bg-yellow-300 text-black font-bold uppercase text-sm px-6 py-3 rounded-full mt-6 cursor-pointer">{button}</button>
             </Link>)}
           </>
         )}
