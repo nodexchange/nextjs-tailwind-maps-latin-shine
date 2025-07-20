@@ -31,7 +31,7 @@ const NavRight = ({ isActive }) => (
   <div className="right">
     <div className='relative right-[60px] gap-3 lg:right-20 md:right-20 sm:gap-5 row flex flex-row justify-center'>
       {/* <LoginIcon /> */}
-      <ReserveIcon />
+      {/* <ReserveIcon /> */}
       <div className="hidden md:inline">
         <SocialIcons />
       </div>

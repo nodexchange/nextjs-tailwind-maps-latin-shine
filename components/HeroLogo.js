@@ -63,7 +63,7 @@ const HeroLogo = ({hero}) => {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5, delay: 1.5 }}
                   >
-              <ButtonA path="/reserve" title="Reserve your spot" />
+              {/* <ButtonA path="/reserve" title="Reserve your spot" /> */}
                 </motion.div>
             </div>
           </div>

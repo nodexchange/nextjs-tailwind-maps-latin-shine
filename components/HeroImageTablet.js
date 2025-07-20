@@ -57,7 +57,7 @@ function HeroImageTablet({hero}) {
         
         <ButtonA path="/location" title="Our Locations" />
         <br />
-        <ButtonA path="/reserve" title="Reserve your spot" />
+        {/* <ButtonA path="/reserve" title="Reserve your spot" /> */}
       </div>
     </>
   )

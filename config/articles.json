@@ -1,6 +1,19 @@
 {
   "articles": [
     {
+      "id": 42,
+      "title": "Temporary Closure",
+      "author": "Alyssa, High Wycombe",
+      "date": "2025-07-20",
+      "category": "Salsa & Bachata",
+      "short": "Important Announcement to Our Latin Shine Community - We are closing for a while",
+      "text": "Important Announcement to Our Latin Shine Community\n Dear Students,\n\nWe have a bittersweet update to share with you all. Our dance school will be temporarily closing from August 2025 to January 2026. This decision wasn't made lightly, but it comes with joyful news—we’re expecting a new little dancer to join our family in September 2025! 💃🍼\n\nWhile we’re incredibly excited to grow our family, it’s also a little heartbreaking to step away from our beloved dance community, even for a short while. We’ll deeply miss seeing all of your faces, sharing the dance floor, and witnessing your progress.\n\nWe truly hope you understand this decision and continue nurturing your passion for dance in our absence. Please keep attending local classes, social events, and keep polishing your steps and discover new ones. Stay connected, keep dancing, and keep shining!\n\nAnd here's the exciting part...When we return in 2026, we’ll be back in full swing with the launch of Season 2 of our Student Latin Shine Dance Team—this time featuring an All Ladies Salsa Styling Team! 💃✨ Stay tuned for more details.\n\nThank you for your love, support, and understanding. We wish you a joyful and dance-filled rest of 2025. We can’t wait to reunite with you all in the new year.\n\nWith love,Alyssa and Martin  (Latin Shine Team) ❤️",
+      "href": "2025-august-break",
+      "button": "",
+      "buttonUrl": "",
+      "img": "/news/temp-closure.png"
+    },
+    {
       "id": 41,
       "title": "July Salsa & Bachata Courses Starting Soon!",
       "author": "Alyssa, High Wycombe",

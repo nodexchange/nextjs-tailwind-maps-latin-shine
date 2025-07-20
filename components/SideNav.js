@@ -43,14 +43,14 @@ const config = [
     title: "Instructors",
     path: "/instructors",
   },
-  {
-    title: "Reserve",
-    path: "/reserve",
-  },
-  {
-    title: "Payments",
-    path: "/payments",
-  },
+  // {
+  //   title: "Reserve",
+  //   path: "/reserve",
+  // },
+  // {
+  //   title: "Payments",
+  //   path: "/payments",
+  // },
 ];
 
 const NavLink = ({ title, path, isActive }) => (
