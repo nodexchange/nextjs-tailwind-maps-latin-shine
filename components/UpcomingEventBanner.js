@@ -1,9 +1,7 @@
 import { Article } from './Article';
-import events from '../config/events.json';
 
-export const UpcomingEventBanner = () => {
-  const allEvents = events.events;
-  const currentEvents = allEvents.filter((event) => {
+export const UpcomingEventBanner = ({ events = [] }) => {
+  const currentEvents = events.filter((event) => {
     return new Date(event.date) >= new Date();
   });
 
@@ -30,4 +28,4 @@ export const UpcomingEventBanner = () => {
       </div>
     </section>
   );
-}; 
+};

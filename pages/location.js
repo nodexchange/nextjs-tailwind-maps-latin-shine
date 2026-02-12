@@ -1,21 +1,31 @@
+import fs from 'fs';
+import path from 'path';
 import LocationMap from "../components/LocationMap";
-import LocationTabs from "../components/LocationTabs";
 import { Secondary as Layout } from "../layouts";
-import text from "../config/text.json";
 import { DanceLocation } from '../components/DanceLocation';
 
-const Location = () => {
-  const { locationCopy, locationSalsaCopy } = text;
+const Location = ({ siteText }) => {
+  const { locationCopy, footer } = siteText;
   return (
-    <Layout 
-      title="Latin Shine | Dance Company - Our Dance Classes Location" 
-      description="Learn more about our venues and map locations for our Tuesday (Salsa) and Wednesday (Bachata) High Wycombe dance classes.">
+    <Layout
+      title="Latin Shine | Dance Company - Our Venue"
+      description="Find us at the Guildhall in High Wycombe for our monthly Latin dance socials featuring Salsa, Bachata, Cha Cha and more."
+      footer={footer}>
       <LocationMap />
-      <LocationTabs />
       <DanceLocation copy={locationCopy} />
-      <DanceLocation copy={locationSalsaCopy} />
     </Layout>
   );
 };
+
+export async function getServerSideProps() {
+  const textPath = path.join(process.cwd(), 'public', 'data', 'text.json');
+  const siteText = JSON.parse(fs.readFileSync(textPath, 'utf8'));
+
+  return {
+    props: {
+      siteText,
+    },
+  };
+}
 
 export default Location;

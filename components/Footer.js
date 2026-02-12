@@ -1,10 +1,8 @@
 import Link from 'next/link';
 import SocialIcons from './SocialIcons';
 import { gaEvent } from '../lib/ga';
-import text from "../config/text.json";
 
-export default function Footer() {
-  const { footer } = text;
+export default function Footer({ footer = {} }) {
   const handleClick = ({currentTarget}) => {
     gaEvent({ action: `${currentTarget.id}_click`, params: { section: 'footer' }});
   }

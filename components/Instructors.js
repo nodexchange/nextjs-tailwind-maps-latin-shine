@@ -1,7 +1,4 @@
-import text from "../config/text.json";
-
-export const Instructors = () => {
-  const { instructors } = text;
+export const Instructors = ({ instructors = {} }) => {
   return (
     <section className="bg-no-repeat bg-cover bg-instructorsImage text-white w-full px-8 py-10 md:py-10 lg:py-30 lg:px-30 xl:px-40 justify-between md:items-start">
       <div className="block lg:flex">

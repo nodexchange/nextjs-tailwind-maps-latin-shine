@@ -1,51 +1,33 @@
 {
   "hero": {
-    "heading": "Temporary Closure_Email us for more info",
-    "logoText": "We will be back in 2026 - please read news below",
-    "logoWhite": "",
-    "comment": ""
+    "heading": "Monthly Latin Dance Socials are here!_Join us for an evening of dancing",
+    "logoText": "SALSA, BACHATA & MORE_MONTHLY SOCIALS_IN HIGH WYCOMBE",
+    "logoWhite": "Next Social Coming Soon! ➡",
+    "comment": "🎁 Gift Vouchers are now available__📧 Email us to learn more"
   },
   "main": {
     "top": "All Levels Welcome",
-    "description": "Our beginner dance classes are run in a friendly and professional environment, designed to help you to learn new skills in a relaxed settings. Join us weekly to meet new like-minded people. No partner required.",
+    "description": "Join us for our monthly Latin dance socials featuring guest teachers, live music, and a welcoming atmosphere. Each evening starts with a 1-hour class covering Salsa, Bachata, Cha Cha and more, followed by a social dance until midnight. No partner required.",
     "text": "Private Dance Classes",
     "final": "Do you have a special celebration upcoming, need help with a wedding dance routine or simply interested in taking your dancing skills to the next level, contact our team to learn more about private dance class lessons."
   },
   "locationCopy": {
-    "id": "bachata-location",
-    "title": "Bachata Location",
+    "id": "venue-location",
+    "title": "Venue Location",
     "street": "Guildhall",
     "body1": "High Street",
     "body2": "High Wycombe",
     "body3": "HP11 2AG",
     "body4": "Bucks",
     "maps": "https://goo.gl/maps/7SHAuBn3iTjBnMgy5",
-    "description": "Bachata Classes every Wednesday! 7pm - 9pm!",
-    "detailsHref": "/classes#bachata",
-    "detailsText": "Click here for Bachata Class Details",
+    "description": "Monthly Latin Dance Socials at the Guildhall — featuring newly renovated wooden floors, perfect for dancing!",
+    "detailsHref": "/classes",
+    "detailsText": "Click here for Social & Class Details",
     "gettingHere": "Getting Here",
     "byCar": "By Car",
     "byCarText": "From London or Oxfordshire, take A40, or M40 to High Wycombe, and follow directions for Eden Shopping Center (the parking at Eden, after 6:30pm, is only £1.50 for the whole evening). We are located near the TKMAXX. The Guildhall is just a short walk away from either Eden Shopping Center Car Park or Wycombe Swan Car Park. From Aylesbury, take A4010 and follow direction for High Wycombe.",
     "byTrain": "By Train",
     "byTrainText": "There is a regular service from London, Aylesbury and Oxford. High Wycombe station, located on the Amersham Hill and it is around 10min walk from Guildhall. Follow the main road down the hill and turn right on the high street."
-  },
-  "locationSalsaCopy": {
-    "id": "salsa-location",
-    "title": "Salsa Location",
-    "street": "Castle Street Dance Studio",
-    "body1": "52a Castle Street",
-    "body2": "High Wycombe",
-    "body3": "HP13 6RG",
-    "body4": "Bucks",
-    "maps": "https://goo.gl/maps/Ca3UhFNHqZaHaXoS6",
-    "description": "Salsa LA Style every Tuesday! 7pm - 9pm!",
-    "detailsHref": "/classes#salsa",
-    "detailsText": "Click here for Salsa Class Details",
-    "gettingHere": "Getting Here",
-    "byCar": "By Car",
-    "byCarText": "From London or Oxfordshire, take A40, or M40 to High Wycombe, and follow directions for High Wycombe Rail Station",
-    "byTrain": "By Train",
-    "byTrainText": "There is a regular service from London, Aylesbury and Oxford. High Wycombe station, located on the Amersham Hill and it is around 2min walk from our dance studio. Follow the main road down the hill and turn right on the Castle Street."
   },
   "instructors": {
     "main:": "Meet your Teachers",
@@ -61,8 +43,8 @@
     "link": "https://korkeyjudith.com/"
   },
   "footer": {
-    "line1": "Latin Dance Classes",
-    "line2": "in High Wycombe, every Week",
-    "description": "Fun and friendly Latin dance classes in High Wycombe, every Tuesday (Salsa) and Wednesday (Bachata). Beginners are welcome; partners are not required. Learn with us and become a part of the Latin Shine community."
+    "line1": "Latin Dance Socials",
+    "line2": "in High Wycombe, Monthly",
+    "description": "Join us for monthly Latin dance socials at the Guildhall in High Wycombe, featuring Salsa, Bachata, Cha Cha and more. Each evening includes a class with guest teachers followed by a social dance. Beginners are welcome; partners are not required. Become a part of the Latin Shine community."
   }
 }

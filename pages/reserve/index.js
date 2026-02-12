@@ -172,9 +172,8 @@ const Reserve = () => {
           <>
             <ReserveHeader step={step} />
             <div className='my-4 border-solid border-2 border-shineDark p-2'>
-              <h1>We are closed for a while</h1>
-              <p>We will be back in 2026</p>
-              {/* <ReserveSteps
+              
+              <ReserveSteps
                 step={step}
                 step0={
                   <ReserveForm inputEmailEl={inputEmailEl} inputFirstNameEl={inputFirstNameEl} inputLastNameEl={inputLastNameEl} />
@@ -188,10 +187,10 @@ const Reserve = () => {
               >
                 <ReserveValidation validation={validation} />
               </ReserveSteps>
-              <ReserveActions loading={loading} stepHandler={stepHandler} backHandler={backHandler} step={step} /> */}
+              <ReserveActions loading={loading} stepHandler={stepHandler} backHandler={backHandler} step={step} />
             </div>
-            {/* <br /> */}
-            {/* <ReserveSchedule /> */}
+            <br />
+            <ReserveSchedule />
           </>
         )}
       </main>

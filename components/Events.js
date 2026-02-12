@@ -1,13 +1,11 @@
 import { Article } from './Article';
 import { ContentSection } from './layout';
-import events from '../config/events.json';
 
-export const Events = ({ limit = 30 }) => {
-  const allEvents = events.events;
-  const currentEvents = allEvents.filter((event) => {
+export const Events = ({ events = [], limit = 30 }) => {
+  const currentEvents = events.filter((event) => {
     return new Date(event.date) >= new Date();
   });
-  const pastEvents = allEvents.filter((event) => {
+  const pastEvents = events.filter((event) => {
     return new Date(event.date) < new Date();
   });
 

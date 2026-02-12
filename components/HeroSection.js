@@ -6,10 +6,7 @@ import HeroVideo from './HeroVideo';
 import HeroImageMobile from './HeroImageMobile';
 import HeroImageTablet from './HeroImageTablet';
 
-import text from '../config/text.json';
-
-export default function HeroSection() {
-  const { hero } = text;
+export default function HeroSection({ hero = {} }) {
   return (
     <div className="h-auto w-full sm:relative lg:flex bg-custom-stone">
       <HeroAnnouncement hero={hero} />

@@ -30,7 +30,7 @@ const HeroLogo = ({hero}) => {
               );
             })}
           </div>
-          <Link href="/reserve">
+          <Link href="/events">
           <div className="drop-shadow-xl ml-[76px] text-white font-light text-4xl uppercase mb-20  mr-[61px]">
             {hero.logoWhite.split('_').map((item, id) => {
               return (
@@ -63,7 +63,7 @@ const HeroLogo = ({hero}) => {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5, delay: 1.5 }}
                   >
-              {/* <ButtonA path="/reserve" title="Reserve your spot" /> */}
+                {/* <ButtonA path="/reserve" title="Reserve your spot" /> */}
                 </motion.div>
             </div>
           </div>

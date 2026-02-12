@@ -1,8 +1,6 @@
 import Image from "next/image";
-import text from "../config/text.json";
 
-export default function MainSection() {
-  const { main } = text;
+export default function MainSection({ main = {} }) {
   return (
     <section className="bg-white px-4 md:px-8 lg:px-30 xl:px-40 lg:py-5">
       <div className="md:hidden">

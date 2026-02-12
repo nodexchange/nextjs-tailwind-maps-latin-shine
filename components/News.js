@@ -1,8 +1,7 @@
 import { Article } from './Article';
 import { ContentSection } from './layout';
-import articles from '../config/articles.json';
 
-export const News = ({ limit = 30 }) => {
+export const News = ({ articles = [], limit = 30 }) => {
   return (
     <ContentSection background="course">
       <h2
@@ -12,7 +11,7 @@ export const News = ({ limit = 30 }) => {
       </h2>
       <hr />
       <div className="mt-6">
-        {articles.articles.slice(0, limit).map((article, id) => (
+        {articles.slice(0, limit).map((article, id) => (
           <Article key={`article-${id}`} {...article} />
         ))}
       </div>

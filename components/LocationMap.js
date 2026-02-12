@@ -6,14 +6,9 @@ import locationIcon from '@iconify/icons-mdi/map-marker';
 
 const locations = [
   {
-    name: 'Bachata Wednesdays at Guildhall, High Wycombe',
+    name: 'Latin Dance Socials at Guildhall, High Wycombe',
     lat: 51.62945971678308,
     lng: -0.7514637303734821,
-  },
-  {
-    name: 'Salsa Tuesdays at Castle Street Dance Studio, High Wycombe',
-    lat: 51.62953531782615,
-    lng: -0.7478802432022472,
   },
 ];
 
@@ -35,12 +30,6 @@ const Marker = ({
     </p>
     </div>
   ) : null;
-
-  const SimpleMarker = ({ lat, lng, name, onClick }) => (
-    <div id="pin" className="w-[200px]" onClick={(e) => (onClick ? onClick(e, { markerId, lat, lng }) : null)} alt={markerId}>
-      <Icon height="2em" icon={locationIcon} className="pin-icon w-15" />
-    </div>
-  );
 
 const LocationMap = () => {
   const mapRef = useRef(null);

@@ -1,9 +1,21 @@
 module.exports = {
 	reactStrictMode: true,
-  experimental: { esmExternals: false },
 	images: {
     unoptimized: true,
-    domains: ['scontent.cdninstagram.com', 'cdninstagram.com', 'mdbootstrap.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'scontent.cdninstagram.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdninstagram.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'mdbootstrap.com',
+      },
+    ],
   },
 	async redirects() {
     return [
@@ -19,5 +31,4 @@ module.exports = {
       }
     ]
   },
-	// optimizeFonts: false,
 };

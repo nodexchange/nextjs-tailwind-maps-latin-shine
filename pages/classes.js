@@ -5,133 +5,70 @@ import ButtonA from "../components/ButtonA";
 const AboutOurClasses = () => {
   return (
     <Layout
-      title="Latin Shine | Dance Company - Our Salsa and Bachata Classes"
-      description="Learn more about our Latin Dance LA Style (on-1 / crossbody) Salsa & Bachata Sensual Classes, weekly schedule, prices and locations"
+      title="Latin Shine | Dance Company - Monthly Socials & Classes"
+      description="Join our monthly Latin dance socials in High Wycombe. Each evening features a 1-hour class with guest teachers followed by a social dance. Salsa, Bachata, Cha Cha and more. All levels welcome."
     >
       <ContentMain>
         <ContentSection
-          id="salsa"
+          id="monthly-social"
           background="dark"
           align="left"
         >
           <h2 className="font-black uppercase font-bigShoulder text-headingS lg:text-headingS md:mb-4">
-            Salsa Tuesdays - Castle Street Dance Studios (High Wycombe)
+            Monthly Social & Class — Guildhall, High Wycombe
           </h2>
           <p>
-            📣 SALSA Beginners & Improvers COURSES 📣
+            Join us for our monthly Latin dance socials at the Guildhall in High
+            Wycombe, featuring newly renovated wooden floors — perfect for
+            dancing!
             <br />
             <br />
-            You have been asking and we have listened! We are Starting our new
-            LA Style (Crossbody on1) Salsa classes at Castle Street Dance
-            Studio. Classes will be taught by two of our instructors Alyssa and
-            Martin.
+            Each evening kicks off with a <strong>1-hour class at 7PM</strong>{" "}
+            led by guest teachers, covering a range of styles including Salsa,
+            Bachata, Cha Cha and more. After the class, stay for our{" "}
+            <strong>social dance until midnight</strong>.
+            <br />
             <br />
             Partners are not required!
             <br />
-            Beginners are welcome!
+            All levels welcome — from complete beginners to experienced dancers.
             <br />
             <br />
-            <p className="font-bold">Price: £10 per person</p>
-            (£7 for student with the valid NUS/University card).
-            <br />
+            For pricing and dates, please contact us for details.
           </p>
-          <br />
-          <p className="font-bold">Tuesdays</p>
-          <p>19:00 - 20:00 - Salsa LA (Crossbody on1) Beginners Class</p>
-          <p>20:00 - 21:00 - Salsa LA (Crossbody on1) Improvers Class</p>
           <br />
           <p>
-            Address: Castle Dance Studio, 52a Castle Street High Wycombe HP13
-            6RG.
+            Address: Guildhall, High Street, High Wycombe, HP11 2AG.
           </p>
           <div className="w-[200px]">
-            <div className="flex">
-              <div className="flex-1">
-                <ButtonA path="/location#salsa-location" title="Salsa Location" />
-              </div>
-              <div className="flex-1 ml-5">
-                <ButtonA path="/reserve" title="Reserve Now" />
-              </div>
-            </div>
+            <ButtonA path="/location" title="Our Venue" />
           </div>
         </ContentSection>
-        
+
         <ContentSection
-          id="bachata"
+          id="what-to-expect"
           background="course"
           align="left"
         >
           <h2 className="font-black uppercase font-bigShoulder text-headingS lg:text-headingS md:mb-4">
-            Bachata Wednesdays - Guildhall (High Wycombe)
+            What to Expect
           </h2>
           <p>
-            📣 Bachata Beginners & Improvers COURSES 📣
+            <strong>7:00 PM — Class:</strong> A fun, energetic 1-hour class with
+            a rotating guest teacher each month. Whether it&apos;s Salsa, Bachata, Cha
+            Cha or something new, you&apos;ll learn fresh moves and techniques in a
+            supportive environment.
             <br />
             <br />
-            🕺💃 We are teaching Bachata Sensual classes at the High Wycombe
-            Guildhall (High Street). 🕺💃
-            <br />
-            Classes are taught by two of our instructors Alyssa and Martin to
-            represent Sensual Style dynamics of followers and leaders.
-          </p>
-          <p>
-            You will learn the basics of Bachata sensual, dancing technique, and
-            partner work.
-            <br />
-            Partners are not required!
-            <br />
-            Beginners are welcome!
+            <strong>8:00 PM — Social Dance:</strong> The floor opens up for
+            social dancing until around midnight. Put your new moves into
+            practice, dance with different partners, and enjoy the music in a
+            friendly, welcoming atmosphere.
             <br />
             <br />
-            <p className="font-bold">Price: £10 per person</p>
-            (£7 for student with the valid NUS/University card).
-            <br />
-          </p>
-          <br />
-          <p className="font-bold">Wednesdays</p>
-          <p>19:00 - 20:00 - Bachata Beginners Class</p>
-          <p>20:00 - 21:00 - Bachata Improvers Class</p>
-          <br />
-          <p>Address: Guildhall (High Street), High Wycombe.</p>
-          <div className="w-[200px]">
-            <div className="flex">
-              <div className="flex-1 ml-5">
-              <ButtonA
-                path="/location#bachata-location"
-                title="Bachata Location"
-              />
-              </div>
-              <div className="flex-1 ml-5">
-                  <ButtonA path="/reserve" title="Reserve Now" />
-                </div>
-            </div>
-          </div>
-        </ContentSection>
-        
-        <ContentSection
-          id="pricing"
-          background="dark"
-          align="left"
-        >
-          <h2 className="font-black uppercase font-bigShoulder text-headingS lg:text-headingS md:mb-4">
-            Prices
-          </h2>
-          <p className="font-bold">Adult Classes (Salsa and Bachata):</p>
-          <p>
-            One class (Bachata or Salsa): £10
-            <br />
-            Two classes (Bachata and Salsa same week): £15
-            <br />
-            Monthly Pass (All monthly Bachata and Salsa classes): £50
-          </p>
-          <br />
-          <p className="font-bold">Students (Salsa and Bachata):</p>
-          <p>
-            One class (Bachata or Salsa): £7
-            <br />
-            Two classes (Bachata and Salsa - same week): £10
-            <br />
-            Monthly Pass (All monthly Bachata and Salsa classes): £40
+            Our socials are a fantastic way to meet like-minded people, improve
+            your dancing, and enjoy a great night out. Come on your own or bring
+            friends — everyone is welcome!
           </p>
         </ContentSection>
       </ContentMain>

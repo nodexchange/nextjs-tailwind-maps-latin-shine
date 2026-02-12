@@ -1,11 +1,8 @@
 import Link from "next/link";
 import { useEffect } from 'react';
 import { gaEvent } from '../lib/ga';
-import text from "../config/text.json";
 
-
-export const About = () => {
-  const { about } = text;
+export const About = ({ about = {} }) => {
   const handlePlay = () => {
     gaEvent({ action: 'about_video_play', params: { section: 'about' } });
   }
@@ -54,9 +51,11 @@ export const About = () => {
           <br/>
           <p className="my-4 l:my-12 md:m-0 font-light font-outfit text-bodyXS md:text-bodyS">
             Ref: {about.third}{" "}
-            <Link href={about.link} className="font-medium text-blue-400 dark:text-blue-400 hover:underline">
-              {about.link}
-            </Link>
+            {about.link && (
+              <Link href={about.link} className="font-medium text-blue-400 dark:text-blue-400 hover:underline">
+                {about.link}
+              </Link>
+            )}
           </p>
         </div>
       </div>

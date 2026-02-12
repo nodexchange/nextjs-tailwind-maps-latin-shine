@@ -1,7 +1,8 @@
+import fs from 'fs';
+import path from 'path';
 import { Secondary as Layout } from '../../layouts';
 import Link from 'next/link';
 import { Article } from '../../components/Article';
-import events from '../../config/events.json';
 
 const NotFound = () => {
   return (
@@ -16,13 +17,15 @@ const NotFound = () => {
 }
 
 export default function EventPage({
-  event
+  event,
+  footer
 }) {
   if (!event) return <NotFound />;
   return (
     <Layout
       title={`Latin Shine | Dance Company - ${event.title}`}
-      description={event.text}>
+      description={event.text}
+      footer={footer}>
       <main className="bg-almostBlack text-white py-10 md:py-10 lg:py-30 justify-between md:items-start">
       <section className="bg-no-repeat bg-cover bg-courseImage text-white px-8 py-10 md:py-10 lg:py-30 lg:px-30 xl:px-40 justify-between md:items-start">
       <div className="mt-6">
@@ -36,7 +39,12 @@ export default function EventPage({
 
 export const getServerSideProps = ({ params }) => {
   const { slug } = params;
-  const event = events.events.find((event) => event.href === slug);
+  const eventsPath = path.join(process.cwd(), 'public', 'data', 'events.json');
+  const textPath = path.join(process.cwd(), 'public', 'data', 'text.json');
 
-  return { props: { event } }
+  const eventsData = JSON.parse(fs.readFileSync(eventsPath, 'utf8'));
+  const textData = JSON.parse(fs.readFileSync(textPath, 'utf8'));
+  const event = eventsData.events.find((event) => event.href === slug) || null;
+
+  return { props: { event, footer: textData.footer || {} } }
 }

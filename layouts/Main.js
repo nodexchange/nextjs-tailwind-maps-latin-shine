@@ -15,6 +15,7 @@ export const Main = ({
   title = 'Latin Shine | Dance Company',
   description,
   children,
+  footer = {},
 }) => {
   return (
     <div className="w-screen h-screen flex flex-col overflow-x-hidden">
@@ -36,7 +37,7 @@ export const Main = ({
                     h-full
                 ">
         {children}
-        <Footer />
+        <Footer footer={footer} />
       </motion.main>
     </div>
   );

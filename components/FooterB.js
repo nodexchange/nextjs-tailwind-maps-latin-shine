@@ -1,8 +1,6 @@
 import Link from 'next/link';
-import text from '../config/text.json';
 
-export default function FooterB() {
-  const { footer } = text;
+export default function FooterB({ footer = {} }) {
   return (
     <footer className="flex flex-col md:flex-row bg-shine text-white px-8 py-10 md:py-10 lg:py-30 lg:px-30 xl:px-40 justify-between md:items-start">
       <h3

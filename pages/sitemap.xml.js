@@ -1,4 +1,5 @@
-import articles from '../config/articles.json';
+import fs from 'fs';
+import path from 'path';
 
 function generateSiteMap(articles) {
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -59,9 +60,11 @@ function SiteMap() {
 }
 
 export async function getServerSideProps({ res }) {
-  
+  const filePath = path.join(process.cwd(), 'public', 'data', 'articles.json');
+  const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+
   // We generate the XML sitemap with the posts data
-  const sitemap = generateSiteMap(articles.articles);
+  const sitemap = generateSiteMap(data.articles);
 
   res.setHeader('Content-Type', 'text/xml');
   // we send the XML to the browser
