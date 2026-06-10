@@ -35,11 +35,6 @@ export default async (req, res) => {
       priority: 0.3
     });
     smStream.write({
-      url: `/register`,
-      changefreq: 'yearly',
-      priority: 0.3
-    });
-    smStream.write({
       url: `/dataprotection`,
       changefreq: 'yearly',
       priority: 0.3

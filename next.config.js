@@ -20,6 +20,16 @@ module.exports = {
 	async redirects() {
     return [
       {
+        source: '/sign-up/register',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/register',
+        destination: '/',
+        permanent: true,
+      },
+      {
         source: '/course-info',
         destination: '/classes',
         permanent: true,
